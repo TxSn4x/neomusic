@@ -43,8 +43,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NexGenBots")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/NexGenBotsIndia")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AniWeb_Bots")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AniWeb_Nexus")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -85,21 +85,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/dkyy20.jpg"
+    "START_IMG_URL", "https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org//file/389a372e8ae039320ca6c.png"
+    "PING_IMG_URL", "https://graph.org/file/95e7a771b14e2da41d7c7-54f29bec291e2ad228.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org//file/3dfcffd0c218ead96b102.png"
-STATS_IMG_URL = "https://graph.org//file/99a8a9c13bb01f9ac7d98.png"
-TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/01f6bff76d899c77153ba-112d924074f9890051.jpg"
+STATS_IMG_URL = "https://graph.org/file/9957e731dcb73475ac8af-4b752c5e52c0a28b9c.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+STREAM_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
 
 
 def time_to_seconds(time):
@@ -121,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
