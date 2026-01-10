@@ -139,66 +139,7 @@ async def start_gp(client, message: Message, _):
     await add_served_chat(message.chat.id)
 
 
-@app.on_callback_query(filters.regex("^api_console$"))
-async def api_console_cb(client, query: CallbackQuery):
-    await query.message.edit_caption(
-        caption="""
-🚀 **NEXGENBOTS API Console**
 
-Fast, reliable & developer-friendly API access.
-
-━━━━━━━━━━━━━━
-💰 **Pricing (Monthly)**
-
-🔓 **Free**
-• 5,000 API requests / day
-
-🚀 **Starter — ₹1**
-• 10,000 API requests / day
-
-⚡ **Standard — ₹2**
-• 15,000 API requests / day
-
-🔥 **Pro — ₹3**
-• 25,000 API requests / day
-
-🏢 **Business — ₹4**
-• 50,000 API requests / day
-
-🏆 **Enterprise — ₹5**
-• 100,000 API requests / day
-
-👑 **Ultra — ₹6**
-• 150,000 API requests / day
-
-━━━━━━━━━━━━━━
-⚡ **Features**
-• High-speed responses  
-• Stable uptime  
-• Fair rate-limits  
-• Dev-friendly  
-
-🛒 **Buy / Manage API**
-Use the console below 👇
-        """,
-        parse_mode=ParseMode.MARKDOWN,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🛒 Open API Console",
-                        url="https://console.nexgenbots.xyz",
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🔙 Back",
-                        callback_data="back_to_start",
-                    )
-                ],
-            ]
-        ),
-    )
     await query.answer()
 
 @app.on_callback_query(filters.regex("^back_to_start$"))
@@ -264,4 +205,5 @@ async def welcome(client, message: Message):
                 await message.stop_propagation()
 
         except Exception as ex:
+
             print(ex)
