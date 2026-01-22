@@ -1,19 +1,4 @@
-import os
-import re
-import json
-import yt_dlp
-import random
-import logging
-import aiohttp
-import asyncio
-from typing import Union
-from pyrogram.enums import MessageEntityType
-from pyrogram.types import Message
-from py_yt import VideosSearch, Playlist
-from AviaxMusic.utils.database import is_on_off
-from AviaxMusic.utils.formatters import time_to_seconds
 
-from config import API_URL, VIDEO_API_URL, API_KEY
 import asyncio
 import os
 import re
@@ -369,3 +354,4 @@ class YouTubeAPI:
                 return None, False
         except Exception:
             return None, False
+
